@@ -12,10 +12,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.bzy.mailbox.components.GmailDrawerMenu
-import com.bzy.mailbox.components.HomeAppBar
-import com.bzy.mailbox.components.HomeBottomMenu
-import com.bzy.mailbox.components.MailList
+import com.bzy.mailbox.components.*
 import com.bzy.mailbox.ui.theme.MailBoxTheme
 
 class MainActivity : ComponentActivity() {
@@ -48,10 +45,11 @@ fun GmailApp() {
         },
         bottomBar = {
             HomeBottomMenu()
-        }
+        },
+        floatingActionButton = { GmailFab(scrollState)}
     ) {
 
-        MailList(it)
+        MailList(it, scrollState)
 
     }
 }

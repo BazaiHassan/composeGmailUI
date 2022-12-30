@@ -2,6 +2,7 @@ package com.bzy.mailbox.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.ScrollState
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Divider
@@ -43,7 +44,7 @@ fun GmailDrawerMenu(scrollState: ScrollState) {
 
     )
 
-    Column(Modifier.verticalScroll(scrollState)) {
+    Column(Modifier.verticalScroll(scrollState).background(Color(213, 236,242))) {
         Text(
             text = "Gmail", color = Color.Red,
             modifier = Modifier.padding(start = 20.dp, top = 20.dp),

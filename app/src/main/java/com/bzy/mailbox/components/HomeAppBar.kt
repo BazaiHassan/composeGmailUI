@@ -30,7 +30,8 @@ fun HomeAppBar(scaffoldState: ScaffoldState, scope:CoroutineScope) {
         Card(
             shape = RoundedCornerShape(10.dp),
             elevation = 6.dp,
-            modifier = Modifier.requiredHeight(50.dp)
+            modifier = Modifier.requiredHeight(50.dp),
+            backgroundColor = Color(213, 236,242)
         ) {
             Row (
                 verticalAlignment = Alignment.CenterVertically,
